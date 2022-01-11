@@ -1,2 +1,2 @@
 all:
-	g++ test.cpp -o dowhatever
+	g++ test.cpp Node.hpp -o dowhatever

@@ -12,13 +12,18 @@ List::Append(int data){
         this->head = newnode;
         this->tail = newnode;
         this->size++;
-
     }
     else if(this->head == this->tail){
         this->head->set_next(newnode);
         this->tail = newnode;
         this->size++;
     }
+    else{
+        this->tail->set_next(newnode);
+        this->tail = newnode;
+        this->size++;
+    }
+
 
 
 }
